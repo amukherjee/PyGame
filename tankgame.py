@@ -2,7 +2,7 @@
 
 from tank import Tank
 
-tanks  = { ('r': Tank( 'Rutgers') ), ('p': Tank( 'Princeton') ), ('n' : Tank( 'NJIT') ) }
+tanks  = { 'r': Tank( 'Rutgers'), 'p': Tank( 'Princeton' ), 'n' : Tank( 'NJIT') }
 alive_tanks = len(tanks)
 
 while alive_tanks > 1 :
@@ -28,7 +28,7 @@ while alive_tanks > 1 :
   print 
   print "*" * 30
 
-  attacker_tank.fires_at(tarket_tank)
+  attacker_tank.fires_at(target_tank)
   
   if not target_tank.alive:
     alive_tanks -= 1

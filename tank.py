@@ -13,11 +13,11 @@ class Tank(object):
 
     if self.alive:
       return "%s (%i armor, %i shells)" % (self.name, self.armor, self.ammo)
-    else
+    else:
       return "%s (DEAD)" % self.name
 
 
-  def fire_at(self, enemy):
+  def fires_at(self, enemy):
 
     if self.ammo >=1:
       self.ammo -=1
@@ -31,7 +31,7 @@ class Tank(object):
 
     self.armor -= 20
     print self.name , " just got hit with a shell!"
-    if self.armor <= 0
+    if self.armor <= 0 :
       self.killed()
 
 
