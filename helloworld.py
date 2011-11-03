@@ -10,10 +10,11 @@ from sys import exit
 pygame.init()
 
 size = [640, 480]
-screen = pygame.display.set_mode(size,0,8)
+screen = pygame.display.set_mode(size,0,32)
 pygame.display.set_caption('Hello World')
 
-background_image_filename = 'background.gif'
+background_image_filename = 'data/background.gif'
+mouse_image_filename = 'data/alien1.png'
 background = pygame.image.load(background_image_filename).convert()
 mouse_cursor = pygame.image.load(mouse_image_filename).convert_alpha()
 
