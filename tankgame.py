@@ -1,9 +1,11 @@
+#!/usr/bin/python -tt
+
 from tank import Tank
 
-tanks  = { 'r': Tank( 'Rutgers' ), 'p': Tank( 'Princeton' ), 'n' : Tank( 'NJIT' ) }
+tanks  = { ('r': Tank( 'Rutgers') ), ('p': Tank( 'Princeton') ), ('n' : Tank( 'NJIT') ) }
 alive_tanks = len(tanks)
 
-while alive_tanks >1 :
+while alive_tanks > 1 :
 
   print 
   for tank_name in sorted( tanks.keys()):

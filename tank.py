@@ -1,3 +1,5 @@
+#!/usr/bin/python -tt
+
 class Tank(object):
 
   def __init__(self, name):
